@@ -32,6 +32,15 @@ window.tvSite = (() => {
     });
     let data = null;
     try { data = await res.json(); } catch {}
+    if (res.status === 401 && token) {
+      clearSession();
+      const msg = (data && data.error) || "Сессия истекла";
+      if (!location.pathname.endsWith("auth.html")) {
+        alert("Аккаунт не найден или сессия истекла. Зарегистрируйся заново.");
+        location.href = "auth.html?mode=register";
+      }
+      throw new Error(msg);
+    }
     if (!res.ok) throw new Error((data && data.error) || "HTTP " + res.status);
     return data;
   }
