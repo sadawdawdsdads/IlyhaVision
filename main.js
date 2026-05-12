@@ -1,4 +1,4 @@
-window.TV_API = "https://api.testvision.app";
+window.TV_API = "https://ilyhavision-api.onrender.com";
 
 window.tvSite = (() => {
   function getToken() {
