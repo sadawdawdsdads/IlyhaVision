@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Тарифы — TestVision</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner container">
+    <a href="/" class="brand">
+      <span class="brand-dot"></span>
+      <span class="brand-name">TestVision</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html#features">Возможности</a>
+      <a href="pricing.html">Тарифы</a>
+      <a href="download.html">Скачать</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="auth.html" class="btn btn-ghost">Войти</a>
+      <a href="auth.html?mode=register" class="btn btn-primary">Регистрация</a>
+    </div>
+  </div>
+</header>
+
+<div class="page">
+  <div class="container">
+    <h1 class="page-title">Простые тарифы</h1>
+    <p class="page-sub">Начни бесплатно — улучшись когда нужно</p>
+
+    <div class="pricing-grid">
+      <div class="plan">
+        <h3>Free</h3>
+        <div class="plan-price">0₴<small> / навсегда</small></div>
+        <p class="plan-desc">Чтобы попробовать</p>
+        <ul class="plan-list">
+          <li>12 вопросов в день</li>
+          <li>Lite модель (текст + фото)</li>
+          <li>Наурок и Всеосвита</li>
+          <li>Обычный режим подсветки</li>
+          <li class="off">Скрытый режим</li>
+          <li class="off">Pro и Ultra модели</li>
+          <li class="off">Безлимит запросов</li>
+        </ul>
+        <a href="auth.html?mode=register" class="btn btn-ghost btn-block">Начать бесплатно</a>
+      </div>
+
+      <div class="plan plan-pro">
+        <h3>Premium</h3>
+        <div class="plan-price">149₴<small> / месяц</small></div>
+        <p class="plan-desc">Для регулярного использования</p>
+        <ul class="plan-list">
+          <li>Безлимит вопросов</li>
+          <li>Pro модель (продвинутая)</li>
+          <li>Ultra модель (топ)</li>
+          <li>Скрытый режим</li>
+          <li>Выбор балла</li>
+          <li>Приоритетный AI</li>
+          <li>Поддержка 24/7</li>
+        </ul>
+        <button class="btn btn-primary btn-block" data-checkout="monthly">Оформить</button>
+      </div>
+
+      <div class="plan">
+        <h3>Premium Year</h3>
+        <div class="plan-price">990₴<small> / год</small></div>
+        <p class="plan-desc">Экономия 45%</p>
+        <ul class="plan-list">
+          <li>Всё из Premium</li>
+          <li>2 месяца в подарок</li>
+          <li>Ранний доступ к новым моделям</li>
+          <li>Закрытый Telegram чат</li>
+          <li>Поддержка приоритет</li>
+        </ul>
+        <button class="btn btn-ghost btn-block" data-checkout="yearly">Оформить</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="main.js"></script>
+<script src="pricing.js"></script>
+</body>
+</html>

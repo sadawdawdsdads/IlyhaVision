@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TestVision — AI помощник для онлайн тестов</title>
+<meta name="description" content="Подсветка правильных ответов для Наурок и Всеосвита. Скрытый режим, выбор балла, AI на базе GPT.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner container">
+    <a href="/" class="brand">
+      <span class="brand-dot"></span>
+      <span class="brand-name">TestVision</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#features">Возможности</a>
+      <a href="#how">Как работает</a>
+      <a href="pricing.html">Тарифы</a>
+      <a href="download.html">Скачать</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="auth.html" class="btn btn-ghost">Войти</a>
+      <a href="auth.html?mode=register" class="btn btn-primary">Регистрация</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <div class="badge"><span class="badge-dot"></span>Бета · 2026</div>
+      <h1>AI ассистент <span class="gradient">для онлайн тестов</span></h1>
+      <p class="lead">Подсвечивает правильные ответы на Наурок и Всеосвита. Выбираешь желаемый балл — TestVision подстраивает результат под него.</p>
+      <div class="hero-cta">
+        <a href="download.html" class="btn btn-primary btn-lg">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1v9m0 0L4 6.5M8 10l4-3.5M2 13h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Скачать расширение
+        </a>
+        <a href="pricing.html" class="btn btn-ghost btn-lg">Посмотреть цены</a>
+      </div>
+      <div class="hero-meta">
+        <div class="meta-item"><b>2</b><span>сайта</span></div>
+        <div class="meta-item"><b>3</b><span>AI модели</span></div>
+        <div class="meta-item"><b>2</b><span>режима</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="mock-window">
+        <div class="mock-header">
+          <span class="mock-dot r"></span><span class="mock-dot y"></span><span class="mock-dot g"></span>
+          <span class="mock-url">naurok.com.ua/test</span>
+        </div>
+        <div class="mock-body">
+          <div class="mock-q">1. Столиця України?</div>
+          <div class="mock-opt">A. Львів</div>
+          <div class="mock-opt correct">B. Київ <span class="mock-check">✓</span></div>
+          <div class="mock-opt">C. Одеса</div>
+          <div class="mock-q">2. 2 + 2 = ?</div>
+          <div class="mock-opt">A. 3</div>
+          <div class="mock-opt correct">B. 4 <span class="mock-check">✓</span></div>
+          <div class="mock-opt wrong">C. 5 <span class="mock-check">×</span></div>
+        </div>
+        <div class="mock-hud">
+          <div class="mock-hud-row"><span>Найдено</span><b>12</b></div>
+          <div class="mock-hud-row"><span>Цель</span><b>10 / 12</b></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="features" class="features">
+  <div class="container">
+    <h2 class="section-title">Что умеет TestVision</h2>
+    <div class="feature-grid">
+      <div class="feature">
+        <div class="feature-icon">🎯</div>
+        <h3>Целевой балл</h3>
+        <p>Укажи нужный балл — расширение специально отметит часть ответов неправильно, чтобы получить именно его.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">👁️</div>
+        <h3>Скрытый режим</h3>
+        <p>Подсказки видны только при наведении мыши и почти прозрачны — учитель не заметит ничего лишнего.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🖼️</div>
+        <h3>AI с зрением</h3>
+        <p>Распознаёт вопросы с картинками, формулами и схемами. Free и Premium модели на выбор.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">⚡</div>
+        <h3>Мгновенно</h3>
+        <p>Решает 12 вопросов за 5 секунд. Работает на всех Chromium-браузерах: Chrome, Edge, Brave, Opera.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🔒</div>
+        <h3>Безопасно</h3>
+        <p>Код обфусцирован, API ключи на сервере. Никаких следов в истории браузера.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">📱</div>
+        <h3>Скоро на телефон</h3>
+        <p>Версия для Kiwi и Yandex Browser в разработке. Той же экосистемой накроем мобильные браузеры.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how" class="how">
+  <div class="container">
+    <h2 class="section-title">Как пользоваться</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Установи расширение</h3>
+        <p>Скачай ZIP, распакуй и загрузи в Chrome через chrome://extensions в режиме разработчика.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Зарегистрируйся</h3>
+        <p>Создай аккаунт прямо в окне расширения. Free план — 12 вопросов в день бесплатно.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Открой тест</h3>
+        <p>Зайди на Наурок или Всеосвита. Расширение само найдёт вопросы и подсветит ответы.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <h3>Выбери балл</h3>
+        <p>Укажи желаемый результат — TestVision сделает несколько ошибок специально, чтобы он выглядел естественно.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container cta-inner">
+    <h2>Готов получить нужный балл?</h2>
+    <p>Бесплатно 12 вопросов в день. Premium — безлимит и топовые модели.</p>
+    <div class="cta-actions">
+      <a href="download.html" class="btn btn-primary btn-lg">Скачать сейчас</a>
+      <a href="pricing.html" class="btn btn-ghost btn-lg">Тарифы</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        <span class="brand-name">TestVision</span>
+      </div>
+      <p class="footer-tag">AI помощник для онлайн тестов</p>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>Продукт</h4>
+        <a href="#features">Возможности</a>
+        <a href="pricing.html">Тарифы</a>
+        <a href="download.html">Скачать</a>
+      </div>
+      <div class="footer-col">
+        <h4>Аккаунт</h4>
+        <a href="auth.html">Вход</a>
+        <a href="auth.html?mode=register">Регистрация</a>
+        <a href="dashboard.html">Личный кабинет</a>
+      </div>
+      <div class="footer-col">
+        <h4>Поддержка</h4>
+        <a href="mailto:support@testvision.app">support@testvision.app</a>
+        <a href="terms.html">Условия</a>
+        <a href="privacy.html">Конфиденциальность</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    <span>© 2026 TestVision</span>
+    <span class="muted">Использование на свой страх и риск</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

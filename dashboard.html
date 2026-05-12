@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Личный кабинет — TestVision</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner container">
+    <a href="/" class="brand">
+      <span class="brand-dot"></span>
+      <span class="brand-name">TestVision</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html#features">Возможности</a>
+      <a href="pricing.html">Тарифы</a>
+      <a href="download.html">Скачать</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="btn-logout" class="btn btn-ghost">Выйти</button>
+    </div>
+  </div>
+</header>
+
+<div class="page">
+  <div class="container">
+    <h1 class="page-title">Личный кабинет</h1>
+    <p class="page-sub" id="hello">Привет!</p>
+
+    <div class="dash-grid">
+      <div class="dash-card">
+        <h3>Тариф</h3>
+        <div class="dash-stat" id="dash-plan">FREE</div>
+        <div class="dash-stat-label" id="dash-plan-sub">Бесплатный план</div>
+        <div style="margin-top:20px;display:flex;flex-direction:column;gap:10px">
+          <a href="pricing.html" class="btn btn-primary btn-block" id="btn-upgrade">Улучшить</a>
+          <button class="btn btn-ghost btn-block" id="btn-portal" style="display:none">Управление подпиской</button>
+        </div>
+      </div>
+
+      <div class="dash-card">
+        <h3>Использование сегодня</h3>
+        <div class="dash-stat"><span id="dash-used">0</span> <small style="font-size:18px;color:var(--text-2)">/ <span id="dash-limit">12</span></small></div>
+        <div class="dash-stat-label">вопросов решено</div>
+        <div style="margin-top:24px;height:8px;background:var(--bg-2);border-radius:4px;overflow:hidden">
+          <div id="dash-bar" style="height:100%;width:0%;background:var(--grad);transition:width .4s ease"></div>
+        </div>
+        <p style="color:var(--text-1);margin-top:16px;font-size:13px">Лимит обновляется каждый день в 00:00</p>
+      </div>
+    </div>
+
+    <div class="dash-card" style="margin-top:24px">
+      <h3>Расширение</h3>
+      <p style="color:var(--text-1);margin-bottom:16px">Установи расширение в браузер и войди под этим аккаунтом, чтобы использовать TestVision.</p>
+      <a href="download.html" class="btn btn-primary">Скачать расширение</a>
+    </div>
+
+    <div class="dash-card" style="margin-top:24px">
+      <h3>Аккаунт</h3>
+      <div style="color:var(--text-1);font-size:14px;line-height:2">
+        <div>Email: <b id="dash-email" style="color:var(--text-0)">—</b></div>
+        <div>Имя: <b id="dash-name" style="color:var(--text-0)">—</b></div>
+        <div>Зарегистрирован: <b id="dash-created" style="color:var(--text-0)">—</b></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="main.js"></script>
+<script src="dashboard.js"></script>
+</body>
+</html>
