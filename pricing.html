@@ -3,18 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Тарифы — TestVision</title>
+<title>Тарифы — IlyhaVision</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="nav">
   <div class="nav-inner container">
-    <a href="/" class="brand">
+    <a href="index.html" class="brand">
       <span class="brand-dot"></span>
-      <span class="brand-name">TestVision</span>
+      <span class="brand-name">IlyhaVision</span>
     </a>
     <nav class="nav-links">
       <a href="index.html#features">Возможности</a>
+      <a href="index.html#faq">FAQ</a>
       <a href="pricing.html">Тарифы</a>
       <a href="download.html">Скачать</a>
     </nav>
@@ -28,16 +29,17 @@
 <div class="page">
   <div class="container">
     <h1 class="page-title">Простые тарифы</h1>
-    <p class="page-sub">Начни бесплатно — улучшись когда нужно</p>
+    <p class="page-sub">Начни бесплатно — улучшись когда понадобится</p>
 
     <div class="pricing-grid">
       <div class="plan">
         <h3>Free</h3>
         <div class="plan-price">0₴<small> / навсегда</small></div>
-        <p class="plan-desc">Чтобы попробовать</p>
+        <p class="plan-desc">Попробовать</p>
         <ul class="plan-list">
           <li>12 вопросов в день</li>
-          <li>Lite модель (текст + фото)</li>
+          <li>Lite модель (gpt-4o-mini)</li>
+          <li>Распознавание картинок</li>
           <li>Наурок и Всеосвита</li>
           <li>Обычный режим подсветки</li>
           <li class="off">Скрытый режим</li>
@@ -52,30 +54,63 @@
         <div class="plan-price">149₴<small> / месяц</small></div>
         <p class="plan-desc">Для регулярного использования</p>
         <ul class="plan-list">
-          <li>Безлимит вопросов</li>
-          <li>Pro модель (продвинутая)</li>
-          <li>Ultra модель (топ)</li>
+          <li>500 вопросов в день</li>
+          <li>Pro модель (gpt-4o)</li>
           <li>Скрытый режим</li>
           <li>Выбор балла</li>
           <li>Приоритетный AI</li>
-          <li>Поддержка 24/7</li>
+          <li>Поддержка в Telegram</li>
+          <li class="off">Ultra модель</li>
+          <li class="off">Ранний доступ</li>
         </ul>
         <button class="btn btn-primary btn-block" data-checkout="monthly">Оформить</button>
       </div>
 
-      <div class="plan">
-        <h3>Premium Year</h3>
-        <div class="plan-price">990₴<small> / год</small></div>
-        <p class="plan-desc">Экономия 45%</p>
+      <div class="plan plan-ultimate">
+        <h3>Ultimate Year</h3>
+        <div class="plan-price">1490₴<small> / год</small></div>
+        <p class="plan-desc">Топовая версия · экономия 17%</p>
         <ul class="plan-list">
-          <li>Всё из Premium</li>
-          <li>2 месяца в подарок</li>
+          <li>Безлимит вопросов</li>
+          <li>Ultra модель (топ GPT-4o)</li>
+          <li>Pro модель</li>
+          <li>Скрытый режим</li>
+          <li>Выбор балла</li>
+          <li>Приоритетный AI</li>
           <li>Ранний доступ к новым моделям</li>
-          <li>Закрытый Telegram чат</li>
-          <li>Поддержка приоритет</li>
+          <li>Ранний доступ к новым сайтам</li>
+          <li>Поддержка приоритет 24/7</li>
         </ul>
-        <button class="btn btn-ghost btn-block" data-checkout="yearly">Оформить</button>
+        <button class="btn btn-primary btn-block" data-checkout="yearly">Оформить</button>
       </div>
+    </div>
+
+    <div class="redeem-block">
+      <div class="redeem-card">
+        <h3>Есть ключ активации?</h3>
+        <p>Введи ключ в личном кабинете и получи подписку без оплаты</p>
+        <a href="dashboard.html" class="btn btn-ghost">Активировать ключ</a>
+      </div>
+    </div>
+
+    <div class="pricing-faq">
+      <h2>Часто спрашивают</h2>
+      <details class="faq-item">
+        <summary>Можно отменить подписку?</summary>
+        <p>Да, в любой момент через Stripe Customer Portal. Доступ останется до конца оплаченного периода.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Что значит "ранний доступ"?</summary>
+        <p>Когда выходит новая модель GPT/Claude или поддержка нового тестового сайта — Ultimate-подписчики получают доступ первыми, за 1-3 недели до остальных.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Какая разница между Premium и Ultimate?</summary>
+        <p>Premium = Pro модель + 500 вопросов в день. Ultimate = топовая модель GPT-4o + безлимит + ранний доступ к фичам.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Можно вернуть деньги?</summary>
+        <p>Да, в течение 7 дней после оплаты — пиши в поддержку: <a href="mailto:illya3445por@gmail.com">illya3445por@gmail.com</a></p>
+      </details>
     </div>
   </div>
 </div>
@@ -85,9 +120,13 @@
     <div class="footer-brand">
       <div class="brand">
         <span class="brand-dot"></span>
-        <span class="brand-name">TestVision</span>
+        <span class="brand-name">IlyhaVision</span>
       </div>
       <p class="footer-tag">AI помощник для онлайн тестов</p>
+      <div class="footer-socials">
+        <a href="https://t.me/fuckleyzov" target="_blank">Telegram</a>
+        <a href="mailto:illya3445por@gmail.com?subject=IlyhaVision%20поддержка&body=Здравствуйте!%20У%20меня%20вопрос%20по%20IlyhaVision%3A%20">Email</a>
+      </div>
     </div>
     <div class="footer-cols">
       <div class="footer-col">
@@ -104,14 +143,15 @@
       </div>
       <div class="footer-col">
         <h4>Поддержка</h4>
-        <a href="mailto:support@testvision.app">support@testvision.app</a>
+        <a href="mailto:illya3445por@gmail.com?subject=IlyhaVision%20поддержка&body=Здравствуйте!%20У%20меня%20вопрос%20по%20IlyhaVision%3A%20">illya3445por@gmail.com</a>
+        <a href="https://t.me/fuckleyzov" target="_blank">@fuckleyzov</a>
         <a href="terms.html">Условия</a>
         <a href="privacy.html">Конфиденциальность</a>
       </div>
     </div>
   </div>
   <div class="footer-bottom container">
-    <span>© 2026 TestVision</span>
+    <span>© 2026 IlyhaVision</span>
     <span class="muted">Использование на свой страх и риск</span>
   </div>
 </footer>

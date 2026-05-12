@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Конфиденциальность — IlyhaVision</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner container">
+    <a href="index.html" class="brand">
+      <span class="brand-dot"></span>
+      <span class="brand-name">IlyhaVision</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html#features">Возможности</a>
+      <a href="pricing.html">Тарифы</a>
+      <a href="download.html">Скачать</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="index.html" class="btn btn-ghost">На главную</a>
+    </div>
+  </div>
+</header>
+
+<div class="page">
+  <div class="container" style="max-width:760px">
+    <h1 class="page-title">Политика конфиденциальности</h1>
+    <p class="page-sub">Последнее обновление: 12 мая 2026</p>
+
+    <div class="legal">
+      <h2>1. Какие данные мы собираем</h2>
+      <ul>
+        <li><b>Email и имя</b> — для регистрации и связи</li>
+        <li><b>Хеш пароля</b> — пароль хранится в зашифрованном виде (bcrypt), мы его не видим</li>
+        <li><b>Статус подписки</b> — план, дата окончания, ID транзакции Stripe</li>
+        <li><b>Статистика использования</b> — сколько вопросов решено в день (без содержания вопросов)</li>
+        <li><b>Текст и картинки тестовых вопросов</b> — передаются в OpenAI только в момент обработки, не сохраняются</li>
+      </ul>
+
+      <h2>2. Что мы НЕ собираем</h2>
+      <ul>
+        <li>Историю браузера</li>
+        <li>Cookies сторонних сайтов</li>
+        <li>Личную переписку, документы, фото</li>
+        <li>Данные банковских карт (это делает Stripe напрямую, мы видим только статус оплаты)</li>
+      </ul>
+
+      <h2>2. Где хранятся данные</h2>
+      <p>Серверы расположены в Frankfurt (Render.com). База — SQLite на сервере. Платёжные данные обрабатывает Stripe.</p>
+
+      <h2>3. Кому передаём</h2>
+      <ul>
+        <li><b>OpenAI</b> — текст и картинки вопросов для получения ответов (по их политике, данные не используются для обучения)</li>
+        <li><b>Stripe</b> — данные карты при оплате (мы их не видим)</li>
+        <li>Никому больше. Не продаём данные рекламодателям, не сливаем третьим лицам.</li>
+      </ul>
+
+      <h2>4. Сколько храним</h2>
+      <ul>
+        <li>Аккаунт — пока ты его не удалишь</li>
+        <li>Статистика — 90 дней</li>
+        <li>Чек-листы AI-запросов — не сохраняются вообще</li>
+      </ul>
+
+      <h2>5. Cookies и localStorage</h2>
+      <p>На сайте мы используем только <b>localStorage</b> — для хранения токена авторизации в твоём браузере. Никаких трекинговых cookies, никакого Google Analytics, никакой рекламы.</p>
+
+      <h2>6. Твои права</h2>
+      <p>Ты можешь:</p>
+      <ul>
+        <li>Запросить копию своих данных</li>
+        <li>Изменить email/имя/пароль</li>
+        <li>Удалить аккаунт навсегда (все данные стираются в течение 7 дней)</li>
+      </ul>
+      <p>Напиши на <a href="mailto:illya3445por@gmail.com?subject=IlyhaVision%20-%20удаление%20данных&body=Здравствуйте!%20Прошу%20удалить%20мой%20аккаунт%20и%20данные.%20Email%20аккаунта%3A%20">illya3445por@gmail.com</a>.</p>
+
+      <h2>7. Безопасность</h2>
+      <p>Все запросы идут через HTTPS. Пароли хешируются bcrypt. AI-ключи OpenAI хранятся только на сервере, никогда не передаются на клиент. Код расширения обфусцирован.</p>
+
+      <h2>8. Дети</h2>
+      <p>Сервис не предназначен для детей младше 16 лет. Если ты родитель и обнаружил, что ребёнок зарегистрировался — напиши нам, удалим аккаунт.</p>
+
+      <h2>9. Контакты</h2>
+      <p>По вопросам приватности: <a href="mailto:illya3445por@gmail.com?subject=IlyhaVision%20-%20приватность&body=Здравствуйте!%20У%20меня%20вопрос%20по%20приватности%3A%20">illya3445por@gmail.com</a> или <a href="https://t.me/fuckleyzov" target="_blank">Telegram @fuckleyzov</a>.</p>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        <span class="brand-name">IlyhaVision</span>
+      </div>
+      <p class="footer-tag">AI помощник для онлайн тестов</p>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>Продукт</h4>
+        <a href="index.html#features">Возможности</a>
+        <a href="pricing.html">Тарифы</a>
+      </div>
+      <div class="footer-col">
+        <h4>Поддержка</h4>
+        <a href="mailto:illya3445por@gmail.com?subject=IlyhaVision%20поддержка&body=Здравствуйте!%20У%20меня%20вопрос%20по%20IlyhaVision%3A%20">illya3445por@gmail.com</a>
+        <a href="https://t.me/fuckleyzov" target="_blank">@fuckleyzov</a>
+      </div>
+      <div class="footer-col">
+        <h4>Документы</h4>
+        <a href="terms.html">Условия</a>
+        <a href="privacy.html">Конфиденциальность</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    <span>© 2026 IlyhaVision</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

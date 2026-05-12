@@ -839,6 +839,343 @@ h1 {
   word-break: break-all;
 }
 
+.hero-trust {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  color: var(--text-1);
+  flex-wrap: wrap;
+}
+
+.trust-stars {
+  color: #ffbd44;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.section-sub {
+  text-align: center;
+  color: var(--text-1);
+  margin: -32px 0 40px;
+  font-size: 16px;
+}
+
+.logos {
+  padding: 30px 0 50px;
+}
+
+.logos-title {
+  text-align: center;
+  color: var(--text-2);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
+  margin-bottom: 18px;
+}
+
+.logo-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.logo-chip {
+  padding: 10px 18px;
+  background: var(--bg-1);
+  border: 1px solid var(--border);
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.logo-chip.soon {
+  color: var(--text-2);
+  opacity: 0.7;
+}
+
+.comparison {
+  padding: 80px 0;
+}
+
+.compare-table {
+  max-width: 880px;
+  margin: 0 auto;
+  background: var(--bg-1);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.compare-row {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--border);
+  align-items: center;
+  font-size: 14px;
+}
+
+.compare-row:last-child {
+  border-bottom: none;
+}
+
+.compare-head {
+  background: var(--bg-2);
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-2);
+}
+
+.compare-cell-us {
+  background: linear-gradient(135deg, #7c5cff, #4ec5ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.compare-row > div:not(:first-child) {
+  text-align: center;
+}
+
+.yes {
+  color: var(--success);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.no {
+  color: var(--text-2);
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+.faq {
+  padding: 80px 0;
+}
+
+.faq-grid {
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faq-item {
+  background: var(--bg-1);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 18px 22px;
+  transition: all 0.2s ease;
+}
+
+.faq-item:hover {
+  border-color: rgba(124, 92, 255, 0.4);
+}
+
+.faq-item[open] {
+  background: var(--bg-2);
+  border-color: rgba(124, 92, 255, 0.5);
+}
+
+.faq-item summary {
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  font-size: 22px;
+  font-weight: 300;
+  color: var(--text-2);
+  transition: transform 0.2s;
+}
+
+.faq-item[open] summary::after {
+  transform: rotate(45deg);
+}
+
+.faq-item p {
+  margin-top: 12px;
+  color: var(--text-1);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.pricing-faq {
+  max-width: 760px;
+  margin: 60px auto 0;
+}
+
+.pricing-faq h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.pricing-faq .faq-item + .faq-item {
+  margin-top: 10px;
+}
+
+.plan-ultimate {
+  border-color: #ffbd44;
+  background: linear-gradient(180deg, rgba(255, 189, 68, 0.08), transparent 60%), var(--bg-1);
+  position: relative;
+}
+
+.plan-ultimate::before {
+  content: "Топ";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 4px 14px;
+  background: linear-gradient(135deg, #ffbd44, #ff8a00);
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.plan-pill {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 3px 8px;
+  border-radius: 20px;
+  background: var(--bg-3);
+  color: var(--text-1);
+}
+
+.plan-pill.ultimate {
+  background: linear-gradient(135deg, #ffbd44, #ff8a00);
+  color: white;
+}
+
+.plan-pill.premium {
+  background: var(--grad);
+  color: white;
+}
+
+.plan-badge {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  padding: 3px 8px;
+  border-radius: 20px;
+  background: var(--bg-3);
+  color: var(--text-1);
+}
+
+.plan-badge.premium {
+  background: var(--grad);
+  color: white;
+}
+
+.redeem-block {
+  max-width: 600px;
+  margin: 50px auto 0;
+}
+
+.redeem-card {
+  text-align: center;
+  padding: 28px;
+  background: var(--bg-1);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+}
+
+.redeem-card h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.redeem-card p {
+  color: var(--text-1);
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.legal {
+  background: var(--bg-1);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 36px 40px;
+  line-height: 1.7;
+}
+
+.legal h2 {
+  font-size: 18px;
+  margin-top: 28px;
+  margin-bottom: 10px;
+  color: var(--text-0);
+}
+
+.legal h2:first-child {
+  margin-top: 0;
+}
+
+.legal p {
+  color: var(--text-1);
+  margin-bottom: 12px;
+}
+
+.legal ul {
+  margin: 10px 0 16px 20px;
+  color: var(--text-1);
+}
+
+.legal li {
+  padding: 4px 0;
+}
+
+.legal a {
+  color: var(--accent-2);
+  text-decoration: none;
+}
+
+.legal a:hover {
+  text-decoration: underline;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.footer-socials a {
+  color: var(--text-1);
+  font-size: 13px;
+  padding: 4px 12px;
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  transition: all 0.2s;
+}
+
+.footer-socials a:hover {
+  border-color: var(--accent);
+  color: var(--accent-2);
+}
+
 @media (max-width: 900px) {
   h1 { font-size: 38px; }
   .hero-inner { grid-template-columns: 1fr; gap: 40px; }
@@ -850,4 +1187,6 @@ h1 {
   .nav-links { display: none; }
   .download-grid { grid-template-columns: 1fr; }
   .dash-grid { grid-template-columns: 1fr; }
+  .compare-row { grid-template-columns: 1.5fr 1fr 1fr 1fr; padding: 12px 14px; font-size: 12px; }
+  .legal { padding: 24px 18px; }
 }

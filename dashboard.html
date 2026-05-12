@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Личный кабинет — TestVision</title>
+<title>Личный кабинет — IlyhaVision</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="nav">
   <div class="nav-inner container">
-    <a href="/" class="brand">
+    <a href="index.html" class="brand">
       <span class="brand-dot"></span>
-      <span class="brand-name">TestVision</span>
+      <span class="brand-name">IlyhaVision</span>
     </a>
     <nav class="nav-links">
       <a href="index.html#features">Возможности</a>
@@ -52,8 +52,35 @@
     </div>
 
     <div class="dash-card" style="margin-top:24px">
+      <h3>Активация ключа</h3>
+      <p style="color:var(--text-1);margin-bottom:16px">Если у тебя есть ключ активации — введи его, чтобы получить подписку</p>
+      <div style="display:flex;gap:10px;align-items:stretch">
+        <input class="input" id="redeem-code" placeholder="IV-XXXX-XXXX-XXXX-XXXX" style="flex:1;text-transform:uppercase;font-family:monospace;letter-spacing:1px">
+        <button class="btn btn-primary" id="btn-redeem">Активировать</button>
+      </div>
+      <div class="form-err" id="redeem-err" style="margin-top:8px"></div>
+      <div id="redeem-ok" style="color:var(--success);font-size:13px;margin-top:8px;display:none"></div>
+    </div>
+
+    <div class="dash-card admin-only" id="admin-card" style="margin-top:24px;display:none;border-color:var(--accent)">
+      <h3>🔑 Админка — создание ключей</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr auto;gap:10px;margin-bottom:12px">
+        <select class="input" id="key-plan">
+          <option value="premium">Premium (Pro)</option>
+          <option value="ultimate" selected>Ultimate</option>
+        </select>
+        <input class="input" type="number" id="key-days" value="30" min="1" max="3650" placeholder="дней">
+        <input class="input" type="number" id="key-count" value="1" min="1" max="50" placeholder="кол-во">
+        <input class="input" id="key-note" placeholder="заметка (опц)">
+        <button class="btn btn-primary" id="btn-create-keys">Создать</button>
+      </div>
+      <div class="form-err" id="admin-err"></div>
+      <div id="keys-list" style="margin-top:16px"></div>
+    </div>
+
+    <div class="dash-card" style="margin-top:24px">
       <h3>Расширение</h3>
-      <p style="color:var(--text-1);margin-bottom:16px">Установи расширение в браузер и войди под этим аккаунтом, чтобы использовать TestVision.</p>
+      <p style="color:var(--text-1);margin-bottom:16px">Установи расширение в браузер и войди под этим аккаунтом, чтобы использовать IlyhaVision.</p>
       <a href="download.html" class="btn btn-primary">Скачать расширение</a>
     </div>
 
@@ -62,11 +89,43 @@
       <div style="color:var(--text-1);font-size:14px;line-height:2">
         <div>Email: <b id="dash-email" style="color:var(--text-0)">—</b></div>
         <div>Имя: <b id="dash-name" style="color:var(--text-0)">—</b></div>
-        <div>Зарегистрирован: <b id="dash-created" style="color:var(--text-0)">—</b></div>
+        <div>Подписка до: <b id="dash-ends" style="color:var(--text-0)">—</b></div>
       </div>
     </div>
   </div>
 </div>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        <span class="brand-name">IlyhaVision</span>
+      </div>
+      <p class="footer-tag">AI помощник для онлайн тестов</p>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>Продукт</h4>
+        <a href="index.html#features">Возможности</a>
+        <a href="pricing.html">Тарифы</a>
+      </div>
+      <div class="footer-col">
+        <h4>Поддержка</h4>
+        <a href="mailto:illya3445por@gmail.com?subject=IlyhaVision%20поддержка&body=Здравствуйте!%20У%20меня%20вопрос%20по%20IlyhaVision%3A%20">illya3445por@gmail.com</a>
+        <a href="https://t.me/fuckleyzov" target="_blank">@fuckleyzov</a>
+      </div>
+      <div class="footer-col">
+        <h4>Документы</h4>
+        <a href="terms.html">Условия</a>
+        <a href="privacy.html">Конфиденциальность</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    <span>© 2026 IlyhaVision</span>
+  </div>
+</footer>
 
 <script src="main.js"></script>
 <script src="dashboard.js"></script>

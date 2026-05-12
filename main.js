@@ -24,10 +24,11 @@ window.tvSite = (() => {
     const token = getToken();
     const headers = { "Content-Type": "application/json" };
     if (token) headers.Authorization = "Bearer " + token;
+    const m = method || (body !== undefined ? "POST" : "GET");
     const res = await fetch(window.TV_API + path, {
-      method: method || (body ? "POST" : "GET"),
+      method: m,
       headers,
-      body: body ? JSON.stringify(body) : undefined,
+      body: body !== undefined ? JSON.stringify(body) : undefined,
     });
     let data = null;
     try { data = await res.json(); } catch {}
@@ -49,7 +50,7 @@ window.tvSite = (() => {
 document.addEventListener("DOMContentLoaded", () => {
   const isLoggedIn = !!window.tvSite.getToken();
   document.querySelectorAll(".nav-actions").forEach((nav) => {
-    if (isLoggedIn) {
+    if (isLoggedIn && !nav.querySelector("#btn-logout")) {
       nav.innerHTML = '<a href="dashboard.html" class="btn btn-ghost">Кабинет</a>';
     }
   });
